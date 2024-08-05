@@ -1,0 +1,392 @@
+/* Contents
+/*-----------------
+1.
+
+
+
+
+
+
+
+
+
+-----------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans: wght@100;200; 300;400;500;600;700& display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:wght@100;200;300;400;500;600;700;900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+/*BG Color */
+--primary-color:    #004cca;
+--secondary-color:  #eb0f51;
+--bg-light-blue:  rgb(88, 132, 185)bc;
+--bg-dark:  #666;
+--bg-white: #fff;
+
+/* Text Style */
+
+--primary-font: 'Roboto Slab', serif;
+--secondary-font: 'Josefin Sans', sans-serif;
+--primary-text: #004caa;
+--secondary-text: #fc5185;
+--text-white:   #fff;
+--text-black:   #222;
+--text-gray:    #666;
+--text-light:   #ddd;
+}
+
+body{
+    font-family: var(--primary-font);
+    background-color: var(--bg-white);
+
+}
+
+a {
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    width: .375rem;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-light-blue);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--secondary-color);
+}
+
+.wrapper{
+    padding: 6.25em 0;
+}
+.main-btn{
+    display: inline-block;
+    border: .0625rem solid var(--bg-white);
+    color: var(--text-white);
+    text-align: center;
+    padding: .75rem 1.375rem;
+    font-size: 1rem;
+    background: transparent;
+    text-transform: capitalize;
+    border-radius: .1875rem;
+    transition: all 0.3s ease-in-out;
+}
+.ill-btn{
+    background-color:var(--secondary-color);
+    border-color:var(--secondary-color); 
+    color:var(--text-white);
+}
+.fill-btn:hover{
+    background-color:var (--bg-white);
+    border-color:var (--bg-white);
+    color:var(--text-black);
+}
+h1{
+    font-size: 3.875rem;
+    margin-bottom: 1.25rem;
+    font-weight: 600;
+    color: var(--text-white);
+    font-family: var(--secondary-color);
+}
+h2{
+    font-size: 2.875rem;
+    font-weight: 600;
+    color: var(--text-white);
+    font-family: var(--secondary-color);
+}
+h3{
+    font-size: 2.25rem;
+    font-weight: 600;
+    color: var(--text-white);
+    font-family: var(--secondary-color);
+}
+h4{
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 2.25rem;
+    color: var(--text-black);
+    font-family: var(--secondary-color);
+}
+h5{
+    font-size: 1.5rem;
+    line-height: 1.2;
+    font-weight: 500;
+    color: var(--primary-text);
+    margin-bottom: .9375rem;
+    font-family: var(--secondary-font);
+}
+h6{
+    font-size: .875rem;
+    font-weight: 300;
+    color: var(--text-black);
+    margin-bottom: .9375rem;
+    text-transform: uppercase;
+    font-family: var(--secondary-color);
+}
+p{
+    font-size: 1rem;
+    color: var(--text-gray);
+    line-height: 1.625rem;
+}
+.card{
+    border-radius: .625rem;
+    background-color: var(--bg-white);
+    box-shadow: .5084rem 1.1419rem 2.5rem 0 rgb(0 0 0 / 8%);
+    padding: 3.75rem 3.125rem 4.6875rem;
+    -webkit-transition: all .4s;
+    transition: all .4s;
+    border: 0;
+}
+@keyframes movebonuce{
+    0%{
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    50%{
+        -webkit-transform: translateY(1.5rem);
+        transform: translateY(1.25rem);
+    }
+    100%{
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+.header_wrapper .navbar{
+    padding: .9375rem 0;
+    background-color: transparent;
+    transition: 0.3s ease-in-out;
+} 
+.header_wrapper .navbar-toggler,
+.header_wrapper .navbar-toggler:focus {
+    border: 0;
+    box-shadow: none;
+    color: var(--text-black);
+    line-height: 2;
+}
+
+
+.header_wrapper .nav-item{
+    margin:0.625rem;
+}
+.header_wrapper .nav-item .nav-link{
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--primary-text);
+    display: inline-block;
+    font-family: var(--secondary-font);
+}
+.header_wrapper .nav-item .nav-link:hover,
+.header_wrapper .nav-item .nav-link:focus,
+.header_wrapper .nav-item .nav-link.active{
+    color: var(--secondary-text);
+}
+.navbar.hrader-scrolled{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: var(--bg-white);
+    box-shadow: .5084rem 1.1419rem 2.5rem rgb(0 0 0/ 8%);
+    transition: 0.3s ease-in-out;
+}
+
+.banner_wrapper{
+        background-image:url('../images/Top-banner.jpg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+
+}
+.banner_wrapper p{
+        max-width: 80%;
+        color: var(--text-white);
+}
+
+.banner_wrapper .top-right-sec{
+    position: relative;
+    background-image: url(../images/healthy-hrt.png);
+    background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: contain;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+}
+
+
+.home .card:hover{
+    -webkit-transform-translateY: (-0.625rem) ;
+    transform: translateY(0.625rem);
+}
+.home .icon-box{
+    text-align: counter;
+    margin: 0 auto 2.5rem;
+}
+/*About*/
+.about_wrapper h2{
+        color: var(--text-black);
+}
+.about_wrapper .card{
+    width: 80%;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about_wrapper .about-clinic{
+    flex: 0 0 auto;
+    width: 50%;
+}
+.about_wrapper .about-clinic:nth-child(1),
+.about_wrapper .about-clinic:nth-child(2){
+    margin-bottom: 2.8125rem;
+}
+.about_wrapper .about-clinic:nth-child(2),
+.about_wrapper .about-clinic:nth-child(4){
+    padding-left: 3.75rem;
+}
+.about_wrapper .line-1,
+.about_wrapper .line-2{
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: .0313rem;
+    height: 100%;
+    background: var(--bg-dark);
+}
+.about_wrapper .line-2{
+    width: 100%;
+    height: .0625rem;
+}
+
+
+/*check heart disease section*/
+
+.services_wrapper{
+    background-color: #96546f;
+}
+.services_wrapper .card{
+    background-color: #f53be935;
+    border: .0625rem solid var(--bg-light-blue);
+    box-shadow: none;
+    padding: 2.5rem;
+}
+.services_wrapper .card:hover{
+    background: var(--bg-light-blue);
+    cursor: cell;
+    border-color: transparent;
+}
+.services_wrapper .card h4,
+.services_wrapper .card p{
+    color: var(--text-white);
+}
+.services_wrapper .icon-box{
+    margin-bottom: 1.875rem;
+}
+
+
+
+/* Footer */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
